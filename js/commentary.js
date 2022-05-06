@@ -1,0 +1,93 @@
+    let q=0;
+    var curCom=document.getElementsByClassName('center-comm');
+    $('#acterOne').click(function(){
+    curCom[q].classList.remove('commentIn');
+    curCom[q].classList.add('commentOut');
+    q=0;
+    curCom[q].classList.remove('commentOut');
+    curCom[q].classList.add('commentIn');
+});
+    $('#acterThree').click(function(){
+    curCom[q].classList.remove('commentIn');
+    curCom[q].classList.add('commentOut');
+    q=0;
+    curCom[q].classList.remove('commentOut');
+    curCom[q].classList.add('commentIn');
+});
+    $('#acterTwo').click(function(){
+    curCom[q].classList.remove('commentIn');
+    curCom[q].classList.add('commentOut');
+    q=1;
+    curCom[q].classList.remove('commentOut');
+    curCom[q].classList.add('commentIn');
+});
+    $('#acterFour').click(function(){
+    curCom[q].classList.remove('commentIn');
+    curCom[q].classList.add('commentOut');
+    q=1;
+    curCom[q].classList.remove('commentOut');
+    curCom[q].classList.add('commentIn');
+});
+    $('#acterSeven').click(function(){
+    curCom[q].classList.remove('commentIn');
+    curCom[q].classList.add('commentOut');
+    q=2;
+    curCom[q].classList.remove('commentOut');
+    curCom[q].classList.add('commentIn');
+});
+    $('#acterEight').click(function(){
+    curCom[q].classList.remove('commentIn');
+    curCom[q].classList.add('commentOut');
+    q=2;
+    curCom[q].classList.remove('commentOut');
+    curCom[q].classList.add('commentIn');
+});
+    $('#acterFive').click(function(){
+    curCom[q].classList.remove('commentIn');
+    curCom[q].classList.add('commentOut');
+    q=3;
+    curCom[q].classList.remove('commentOut');
+    curCom[q].classList.add('commentIn');
+});
+    $('#acterSix').click(function(){
+    curCom[q].classList.remove('commentIn');
+    curCom[q].classList.add('commentOut');
+    q=3;
+    curCom[q].classList.remove('commentOut');
+    curCom[q].classList.add('commentIn');
+});
+    $('#next-com').click(function(){
+    if(q==3){
+    curCom[q].classList.remove('commentIn');
+    curCom[q].classList.add('commentOut');
+    q=0;
+    curCom[q].classList.remove('commentOut');
+    curCom[q].classList.add('commentIn');
+}
+
+
+    else {
+    curCom[q].classList.remove('commentIn');
+    curCom[q].classList.add('commentOut');
+    q++;
+    curCom[q].classList.remove('commentOut');
+    curCom[q].classList.add('commentIn');
+}
+
+});
+    $('#prev-com').click(function(){
+    if(q==0){
+    curCom[q].classList.remove('commentIn');
+    curCom[q].classList.add('commentOut');
+    q=3;
+    curCom[q].classList.remove('commentOut');
+    curCom[q].classList.add('commentIn');
+}
+    else {
+    curCom[q].classList.remove('commentIn');
+    curCom[q].classList.add('commentOut');
+    q--;
+    curCom[q].classList.remove('commentOut');
+    curCom[q].classList.add('commentIn');
+}
+});
