@@ -1,3 +1,6 @@
+*, html, body{
+    font-family: Roboto, sans-serif;
+}
 button{
     border: none;
 }
@@ -6,7 +9,6 @@ a{
 }
 body,input,button{
     overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 input:focus,button{
@@ -368,12 +370,12 @@ position: relative;
     background-color: #F8F8F8;
 }
 .slider-bg{
-    background-image:url("../icons/frst.png");
-    background-size: cover;
+    background-image:url("../img/NEWpictures_slider.jpg");
+    background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;
     background-position-y: center;
-    background-position-x:center;
+    background-position-x: center;
 }
 .slider-bg h2{
     font-size: 2.7em;
@@ -385,10 +387,11 @@ position: relative;
     padding: 20.5% 0 0 6.2%;
     line-height: 1.35em;
     letter-spacing: .04em;
+    opacity: 0;
 }
 #campus{
-    background: #E00000;
-    border: 2px solid #E00000;
+    /*background: #E00000;*/
+    /*border: 2px solid #E00000;*/
 }
 .top-slider-buttons{
     margin: 4% 0 0 6%;
@@ -398,7 +401,7 @@ position: relative;
     border: 3px solid #FFFFFF;
     padding-left: 3.7%!important;
     padding-right: 3.7%!important;
-    margin-left: 2%;
+    margin-left: 5%;
 }
 .top-slider{
     position: relative;
@@ -499,6 +502,61 @@ position: relative;
     margin: 0 auto;
     width: 40%;
 }
+.rubric-main{
+    margin: 30px 0;
+    color: #001C54;
+    font-weight: bold;
+    position: relative;
+
+}
+.rubric-main__left{
+    width: calc((100%/3)*2);
+}
+.rubric-main__left-top{
+    display: flex;
+    justify-content: left;
+}
+.left-block{
+    z-index: 1;
+    padding-left: 64px;}
+.top_title_card{
+    font-size: 40px;
+    line-height: 44px;}
+.mid_title_card{
+    line-height: 22px;
+    font-size: 23px;}
+.bot_title_card{
+    font-size: 20px;
+    margin-top: 28px;
+    width: 291px;
+    line-height: 23px;
+    font-weight: 200;
+}
+.left-block .footer_title_card{
+    margin-top: 50px;
+}
+.left-block .footer_title_card a{
+    font-size: 20px;
+    color: #E00000;
+    cursor: pointer;
+}
+.footer_title_card:hover{
+    text-decoration: underline;
+}
+.right-block{
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.right-block img{
+    width: 243px;
+}
+.rubric-main__left-bot{}
+.rubric-main__right{
+    width: calc(100%/3);
+}
 .card-row{
     display: flex;
     flex-wrap: wrap;
@@ -592,8 +650,9 @@ position: relative;
 }
 .choose-items{
     display: flex;
-  justify-content: space-around;
+    justify-content: space-around;
     padding: 0 3%;
+    margin-top: 15%;
 }
 .choose-items-item span{
     font-size: 1.3em;
@@ -875,7 +934,7 @@ width: 40%;
 .admissions-content img{
     width: 96%;
     display: block;
-    margin: 0 auto;
+    margin: 5% auto;
 }
                                             /*Admission TABS-end*/
                                             /*Vertical Tabs*/
@@ -1160,7 +1219,7 @@ cursor: pointer;
     width: 100%;
     position: relative;
     padding: 2% 0 3vw 0;
-    background: url('https://pengguling.com/projects/wp-content/uploads/2021/09/bg-1.png');
+    background: url('../../img/NEWbg.png');
     background-repeat: no-repeat;
     background-position-x:52%;
     background-position-y:0vw;
@@ -1752,6 +1811,18 @@ margin-top: -.7vh;
     margin-right: -1%;
     font-weight: 600;
 }
+/* todo: Hron                                              .. :: School of University :: ..            */
+.school_of_university{
+    width: 100%;
+}
+.school_of_university h2{
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+}
+
 @media (max-height: 700px){
     #online{
         background: #E00000;
