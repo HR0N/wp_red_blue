@@ -1,1 +1,1 @@
-# wp_red_blue
+# School of Education
