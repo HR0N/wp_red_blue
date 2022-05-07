@@ -503,6 +503,7 @@ position: relative;
     width: 40%;
 }
 .rubric-main{
+    display: flex;
     margin: 30px 0;
     color: #001C54;
     font-weight: bold;
@@ -510,11 +511,11 @@ position: relative;
 
 }
 .rubric-main__left{
-    width: calc((100%/3)*2);
+    width: calc(50% + 171px);
 }
 .rubric-main__left-top{
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
 }
 .left-block{
     z-index: 1;
@@ -545,16 +546,61 @@ position: relative;
 }
 .right-block{
     z-index: 0;
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 .right-block img{
-    width: 243px;
+    width: 342px;
 }
-.rubric-main__left-bot{}
+.rubric-main__left-bot{
+    padding-left: 64px;
+
+}
+.choose_su_cards{
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.choose_su_cards__card{
+    width: 20%;
+    min-width: 100px;
+    max-width: 220px;
+    margin-right: 25px;
+    margin-bottom: 60px;
+    padding: 5px;
+
+    border-radius: .4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 1px 1px 15px lightgray;
+    background: linear-gradient(149.94deg, #fffffd 18.76%, #faf8ff 75.67%);
+    cursor: pointer;
+}
+.choose_su_cards__card:nth-child(4n + 4){
+    margin-right: 0;
+}
+.choose_su_cards__card .img{
+    margin: 15px 0 5px 0;
+}
+.choose_su_cards__card .top{
+    font-size: 1em;
+}
+.choose_su_cards__card .bot{
+    font-size: .75em;
+}
+.choose_su_cards__card:hover{
+    color: whitesmoke;
+    background: linear-gradient(149.94deg, #0144C7 18.76%, #001C54 75.67%);
+}
+.choose_su_cards__card.active{
+    color: whitesmoke;
+    background: linear-gradient(149.94deg, #0144C7 18.76%, #001C54 75.67%);
+}
 .rubric-main__right{
+    min-height: 50px;
+    background-color: lightcyan;
     width: calc(100%/3);
 }
 .card-row{
@@ -1865,7 +1911,7 @@ margin-top: -.7vh;
     header{
         display: none;
     }
-    
+
 }
 /*******************LITEBOX********************/
 .position-relative{
@@ -1997,3 +2043,16 @@ margin-top: -.7vh;
     line-height: 1.2em;
 }
 
+/*todo: ......................................................... ......:::::: Media ::::::......     */
+@media only screen and (min-width: 1701px){
+    .choose_su_cards__card{
+        height: 150px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 1700px){
+    .choose_su_cards__card{
+        height: 100px;
+        font-size: 16px;
+    }
+}
