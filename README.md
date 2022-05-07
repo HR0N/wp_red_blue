@@ -1,1 +1,1 @@
-"# wp_red_blue" 
+# wp_red_blue
