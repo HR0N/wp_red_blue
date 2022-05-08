@@ -573,7 +573,6 @@ position: relative;
     width: 20%;
     min-width: 100px;
     max-width: 220px;
-    margin-right: 25px;
 
     border-radius: .5rem;
     text-transform: uppercase;
@@ -706,10 +705,11 @@ position: relative;
 .rubric-main__right-wrapper .rubric-main__right-programs .program:before{
     position: absolute;
     right: 10px;
-    top: calc(50% - 9px);
+    top: calc(50% - 8px);
     opacity: 0;
     transition: all linear .2s;
     content: url("../img/Polygon 1.svg");
+    filter: drop-shadow( 2px 2px 2px grey);
 }
 .rubric-main__right-wrapper .rubric-main__right-programs .program:hover::before{
     opacity: 1;
@@ -718,6 +718,7 @@ position: relative;
     z-index: 4;
     width: 360px;
     font-size: 17px;
+    line-height: 20px;
 }
 .rubric-main__right-wrapper .rubric-main__right-programs .program i{
     text-shadow: 1px 1px 3px gray;
