@@ -502,16 +502,16 @@ position: relative;
     margin: 0 auto;
     width: 40%;
 }
+/*                                          Start School of University                  */
 .rubric-main{
     display: flex;
     margin: 30px 0;
     color: #001C54;
     font-weight: bold;
     position: relative;
-
 }
 .rubric-main__left{
-    width: calc(50% + 171px);
+    width: calc(50% + 122px);
 }
 .rubric-main__left-top{
     display: flex;
@@ -548,61 +548,196 @@ position: relative;
     z-index: 0;
 }
 .right-block img{
-    width: 342px;
+    width: 244px;
 }
 .rubric-main__left-bot{
     padding-left: 64px;
 
 }
 .choose_su_cards{
-    margin-top: 40px;
+    margin-top: 60px;
     position: relative;
     z-index: 2;
     display: flex;
     flex-wrap: wrap;
+}
+.choose_su_cards__line{
+    width: 100%;
+    display: flex;
     justify-content: space-between;
+}
+.choose_su_cards__line_one{
+    margin-bottom: 40px;
 }
 .choose_su_cards__card{
     width: 20%;
     min-width: 100px;
     max-width: 220px;
     margin-right: 25px;
-    margin-bottom: 60px;
-    padding: 5px;
 
-    border-radius: .4rem;
+    border-radius: .5rem;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
     box-shadow: 1px 1px 15px lightgray;
+    /*background: linear-gradient(149.94deg, #fffffd 18.76%, #faf8ff 75.67%);*/
     background: linear-gradient(149.94deg, #fffffd 18.76%, #faf8ff 75.67%);
     cursor: pointer;
 }
-.choose_su_cards__card:nth-child(4n + 4){
+.choose_su_cards__card{
+    height: 117px;
+}
+.choose_su_cards__card .text{
+    margin-top: 10px;
+}
+.choose_su_cards__card .text .top{
+    font-size: 17px;
+}
+.choose_su_cards__card .text .bot{
+    font-size: 11px;
+}
+/*.choose_su_cards__card:nth-child(4n + 4){
     margin-right: 0;
-}
+}*/
 .choose_su_cards__card .img{
-    margin: 15px 0 5px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 5px 0;
 }
-.choose_su_cards__card .top{
-    font-size: 1em;
+.choose_su_cards__card .img img{
+    /*width: 60px;*/
 }
-.choose_su_cards__card .bot{
-    font-size: .75em;
+.choose_su_cards__card .img .img_white{
+    display: none;
+}
+.choose_su_cards__card.active .img .img_white{
+    display: inherit;
+}
+.choose_su_cards__card.active .img .img_blue{
+    display: none;
+}
+.choose_su_cards__card:hover .img .img_white{
+    display: inherit;
+}
+.choose_su_cards__card:hover .img .img_blue{
+    display: none;
 }
 .choose_su_cards__card:hover{
-    color: whitesmoke;
+    color: white;
     background: linear-gradient(149.94deg, #0144C7 18.76%, #001C54 75.67%);
 }
 .choose_su_cards__card.active{
-    color: whitesmoke;
+    color: white;
     background: linear-gradient(149.94deg, #0144C7 18.76%, #001C54 75.67%);
 }
 .rubric-main__right{
+    display: flex;
+    justify-content: right;
     min-height: 50px;
-    background-color: lightcyan;
     width: calc(100%/3);
 }
+.rubric-main__right-wrapper{
+    width: 420px;
+    margin-left: 20%;
+    position: relative;
+}
+.rubric-main__right-wrapper:after{
+    content: "";
+    display:block;
+    height: 80px;
+    width: 370px;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: -3px;
+    background-image: linear-gradient(to bottom, rgba(248, 248, 248, 0), rgba(248, 248, 248, 0.5) 0%);
+    pointer-events: none;
+}
+.rubric-main__right-wrapper .rubric-main__right-nav{
+    width: 370px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.rubric-main__right-wrapper .text{
+    font-size: 22px;
+    font-weight: bold;
+}
+.rubric-main__right-wrapper .rubric-main__right-nav .nav img{
+    cursor: pointer;
+}
+.rubric-main__right-wrapper .rubric-main__right-nav .nav img.nav-down{
+    transform: rotate(180deg);
+    margin-left: 10px;
+}
+.rubric-main__right-programs{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 22px;
+    width: 340px;
+    padding: 15px;
+    box-sizing: content-box;
+    height: 515px;
+    max-height: 515px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/* width */
+.rubric-main__right-programs::-webkit-scrollbar {
+    width: 0;
+}
+.rubric-main__right-wrapper .rubric-main__right-programs .program{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    position: relative;
+    height: 62px;
+    width: 340px;
+    padding: 15px 25px 15px 45px;
+    box-shadow: 1px 1px 15px lightgray;
+    border-radius: .25rem;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: all linear .2s;
+}
+.rubric-main__right-wrapper .rubric-main__right-programs .program:before{
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 9px);
+    opacity: 0;
+    transition: all linear .2s;
+    content: url("../img/Polygon 1.svg");
+}
+.rubric-main__right-wrapper .rubric-main__right-programs .program:hover::before{
+    opacity: 1;
+}
+.rubric-main__right-wrapper .rubric-main__right-programs .program:hover{
+    z-index: 4;
+    width: 360px;
+    font-size: 17px;
+}
+.rubric-main__right-wrapper .rubric-main__right-programs .program i{
+    text-shadow: 1px 1px 3px gray;
+}
+.rubric-main__right-wrapper .rubric-main__right-programs .program:hover i{
+    color: #E00000;
+}
+.rubric-main__right-wrapper .rubric-main__right-programs .program.active{
+    z-index: 4;
+    width: 96%;
+}
+.rubric-main__right-wrapper .rubric-main__right-programs .program i{
+    font-size: 8px;
+    position: absolute;
+    top: calc(50% - 4px);
+    left: 20px;
+    transition: all linear .2s;
+}
+
+/*                                          End School of University                  */
 .card-row{
     display: flex;
     flex-wrap: wrap;
@@ -2045,14 +2180,6 @@ margin-top: -.7vh;
 
 /*todo: ......................................................... ......:::::: Media ::::::......     */
 @media only screen and (min-width: 1701px){
-    .choose_su_cards__card{
-        height: 150px;
-        font-size: 20px;
-    }
 }
 @media only screen and (max-width: 1700px){
-    .choose_su_cards__card{
-        height: 100px;
-        font-size: 16px;
-    }
 }
