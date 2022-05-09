@@ -490,6 +490,8 @@ position: relative;
     opacity: 0;
     transition: 1s;
 }
+
+/*                                          Start_School_of_University                  */
 .rubric-head h2{
     text-align: center;
     color: #001C54;
@@ -502,16 +504,21 @@ position: relative;
     margin: 0 auto;
     width: 40%;
 }
-/*                                          Start School of University                  */
 .rubric-main{
     display: flex;
+    justify-content: center;
+}
+.rubric-main__wrapper{
+    display: flex;
+    flex-wrap: wrap;
     margin: 30px 0;
     color: #001C54;
     font-weight: bold;
     position: relative;
+    padding-left: 50px;
 }
 .rubric-main__left{
-    width: calc(50% + 122px);
+    width: calc(50% + 96px);
 }
 .rubric-main__left-top{
     display: flex;
@@ -519,7 +526,8 @@ position: relative;
 }
 .left-block{
     z-index: 1;
-    padding-left: 64px;}
+    /*padding-left: 64px;*/
+}
 .top_title_card{
     font-size: 40px;
     line-height: 44px;}
@@ -551,7 +559,7 @@ position: relative;
     width: 244px;
 }
 .rubric-main__left-bot{
-    padding-left: 64px;
+    /*padding-left: 64px;*/
 
 }
 .choose_su_cards{
@@ -585,6 +593,7 @@ position: relative;
 }
 .choose_su_cards__card{
     height: 117px;
+    padding: 3px;
 }
 .choose_su_cards__card .text{
     margin-top: 10px;
@@ -633,12 +642,17 @@ position: relative;
 .rubric-main__right{
     display: flex;
     justify-content: right;
+    flex-grow: 1;
     min-height: 50px;
     width: calc(100%/3);
+    min-width: 320px;
 }
 .rubric-main__right-wrapper{
-    width: 420px;
-    margin-left: 20%;
+    width: 96%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
 }
 .rubric-main__right-wrapper:after{
@@ -655,7 +669,7 @@ position: relative;
 }
 .rubric-main__right-wrapper .rubric-main__right-nav{
     width: 370px;
-    padding: 15px;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -672,7 +686,7 @@ position: relative;
 }
 .rubric-main__right-programs{
     position: relative;
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: column;
     margin-top: 22px;
@@ -684,6 +698,7 @@ position: relative;
     overflow-y: auto;
     overflow-x: hidden;
 }
+.rubric-main__right-programs.active{display: flex;}
 /* width */
 .rubric-main__right-programs::-webkit-scrollbar {
     width: 0;
@@ -2042,7 +2057,7 @@ margin-top: -.7vh;
         display: none;
     }
     .right-side{
-        display: none;
+        /*display: none;*/
     }
     header{
         display: none;
@@ -2180,7 +2195,173 @@ margin-top: -.7vh;
 }
 
 /*todo: ......................................................... ......:::::: Media ::::::......     */
+/*Start_School_of_University*/
 @media only screen and (min-width: 1701px){
 }
-@media only screen and (max-width: 1700px){
+@media only screen and (max-width: 1070px){
+    .rubric-head h2{
+        font-size: 24px;
+    }
+    .rubric-head img{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+
+
+
+
+
+    .rubric-main__left{
+        width: 100%;
+    }
+    .rubric-main__left-top{
+        justify-content: center;
+    }
+    .top_title_card{
+        font-size: 23px;
+        line-height: 27px;}
+    .mid_title_card{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .bot_title_card{
+        font-size: 14px;
+        margin-top: 12px;
+        width: 190px;
+        line-height: 16px;
+    }
+    .left-block .footer_title_card{
+        margin-top: 16px;
+    }
+    .left-block .footer_title_card a{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .right-block img{
+        width: 132px;
+    }
+    .choose_su_cards{
+        width: 96%;
+    }
+    .choose_su_cards__line_one{
+        margin-bottom: 10px;
+    }
+    .choose_su_cards__card{
+        width: 25%;
+        min-width: 74px;
+        max-width: 120px;
+
+        border-radius: .25rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        box-shadow: 1px 1px 15px lightgray;
+        /*background: linear-gradient(149.94deg, #fffffd 18.76%, #faf8ff 75.67%);*/
+        background: linear-gradient(149.94deg, #fffffd 18.76%, #faf8ff 75.67%);
+        cursor: pointer;
+    }
+    .choose_su_cards__card{
+        position: relative;
+        height: 30px;
+        width: 74px;
+        padding: 3px 3px 3px 20px;
+    }
+    .choose_su_cards__card .text{
+        margin-top: 3px;
+    }
+    .choose_su_cards__card .text .top{
+        font-size: 8px;
+        line-height: 9px;
+    }
+    .choose_su_cards__card .text .bot{
+        font-size: 4px;
+        line-height: 5px;
+    }
+    /*.choose_su_cards__card:nth-child(4n + 4){
+        margin-right: 0;
+    }*/
+    .choose_su_cards__card .img{
+        position: absolute;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        height: 100%;
+        left: 5px;
+        top: 0;
+    }
+    .choose_su_cards__card .img img{
+        position: relative;
+        height: 17px;
+    }
+    .rubric-main__right{
+        display: flex;
+        justify-content: right;
+        flex-grow: 1;
+        min-width: 320px;
+    }
+    .rubric-main__right-wrapper{
+        margin-top: 36px;
+        width: 320px;
+        box-sizing: content-box;
+        position: relative;
+    }
+    .rubric-main__right-wrapper .rubric-main__right-nav{
+        width: 320px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .rubric-main__right-wrapper .text{
+        font-size: 18px;
+    }
+    .rubric-main__right-wrapper .rubric-main__right-nav .nav img.nav-down{
+        transform: rotate(180deg);
+        margin: 0 0 0 10px;
+    }
+    .rubric-main__right-programs{
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0;
+        min-width: 320px;
+        width: 340px;
+        padding: 0 15px 15px 15px;
+        height: 258px;
+        max-height: 258px;
+    }
+    .rubric-main__right-wrapper .rubric-main__right-programs .program{
+        min-width: 320px;
+        width: 340px;
+        font-size: 14px;
+        line-height: 16px;
+     }
+
+
+
+
+
+    .rubric-main{
+        display: flex;
+        justify-content: center;
+    }
+    .rubric-main__wrapper{
+        justify-content: center;
+        padding: 0 15px;
+    }
+    .rubric-main__right{
+        justify-content: center;
+    }
+    .rubric-main__left-bot{
+        display: none;
+    }
+    .rubric-main__left-bot-clone{
+        display: flex;
+        justify-content: center;
+    }
+    .right-coll{
+        display: none; ///*todo: ........................................ ......:::::: Remoted Book ::::::......     */
+    }
 }
