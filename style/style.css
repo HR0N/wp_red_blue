@@ -796,19 +796,109 @@ position: relative;
 }
 .left-coll{
     text-align: justify!important;
-    width: 60%;
+    width: 50%;
     margin-left: 1%;
+}
+.bahelor-magister{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 1%;
+}
+.year-num{
+    font-family: Times;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.sp-magi{
+    margin: 0 0 0 -20px;
+    text-align: left;
+}
+.year-red{
+    width: 5%;
+    color: #E00000;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    display: inline-block;
+    transform: rotate(-90deg)!important;
+    transform-origin: bottom left;
+    margin: 5% 3%;
+
 
 }
+.Magisters, .Bachalors{
+    color: #001C54;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+/*.Magisters{*/
+/*    margin-left: 3%;*/
+/*}*/
+
+
+
 .right-coll{
-    width: 40%;
+    width: 50%;
+    margin-right: 10%;
+    background-image: url("../img/Notebook.png");
+    background-size: contain;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    position: relative;
+}
+.right-coll a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 30%;
+    right: -5%;
+    cursor: pointer;
 }
 .right-coll img{
-    margin-top: -22%;
-    margin-left:-28%!important;
+    width: 67px;
+    height: 67px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.pulse_wrapper{
+    position: relative;
+}
+.pulse_wrapper .pulse_bg{
+    width: 150%;
+    height: 150%;
+    background: linear-gradient(rgba(1, 68, 199, 0.29), rgba(1, 68, 199, 0.7), rgba(0, 28, 84, 0.7));
+}
+
+
+.right-coll a p{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: -20px;
+
 }
 #showMore{
-    margin: 5% auto 0;
+    margin: 7% auto 0;
 }
 .showMore{
     text-align: center;
@@ -2196,7 +2286,10 @@ margin-top: -.7vh;
 
 /*todo: ......................................................... ......:::::: Media ::::::......     */
 /*Start_School_of_University*/
-@media only screen and (min-width: 1701px){
+@media only screen and (min-width: 1071px){
+    .rubric-main__left-bot-clone{
+        display: none;
+    }
 }
 @media only screen and (max-width: 1070px){
     .rubric-head h2{
@@ -2361,7 +2454,11 @@ margin-top: -.7vh;
         display: flex;
         justify-content: center;
     }
+    /*todo: ........................................ ......:::::: Removed Book ::::::......     */
+    .mob-university.school_of_university__mobile{
+        display: none;
+    }
     .right-coll{
-        display: none; ///*todo: ........................................ ......:::::: Remoted Book ::::::......     */
+        display: none;
     }
 }
