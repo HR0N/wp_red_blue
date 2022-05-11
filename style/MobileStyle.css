@@ -367,7 +367,7 @@ input[type=search]{
     font-weight: 600;
 }
 .mob-study-online{
-    background: #001c54D9;
+    background: #001c54;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.45);
     color: #FFFFFF;
     text-transform: uppercase;
@@ -549,11 +549,11 @@ input[type=search]{
 }
 .mob-choose-us-image{
     position: relative;
-    width: 90%;
-    margin: 0 auto 5%;
+    width: 74%;
+    margin-left: 3%;
 }
 .mob-choose-us-image img{
-    width: 70%;
+    width: 100%;
     align-items: start;
 
 }
@@ -562,8 +562,8 @@ input[type=search]{
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 20%;
-    right: 15%;
+    top: 25%;
+    right: -16%;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -584,8 +584,8 @@ input[type=search]{
 .mob-pulse_wrapper{
     position: relative;
     margin: 0 auto 0;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     -webkit-perspective: 1000;
     -webkit-backface-visibility: hidden;
 
@@ -628,7 +628,7 @@ input[type=search]{
         -ms-transform: scale(1);
         -webkit-transform: scale(1);
         transform: scale(1);
-        box-shadow: 0 0 0 10px rgba(1, 68, 199, 0.0);
+        box-shadow: 0 0 0 30px rgba(1, 68, 199, 0.0);
     }
     /*100% {*/
     /*    -moz-transform: scale(0.9);*/
@@ -1443,7 +1443,7 @@ border-radius: 0 0 5px 5px;
     margin-top: -30vh;
 }
 .about-header-mob{
-    background-image: url("../img/about-he-mob.png");
+    background-image: url("../img/Page2TopPicMob.png");
     width: 100%;
     background-size: cover;
     background-position-y:-150%;
@@ -1452,18 +1452,18 @@ border-radius: 0 0 5px 5px;
     min-height: 50vh;
 }
 .about-header-mob h2{
-    font-size: 2.7em;
+    font-size: 2em;
     color:#fff;
     text-transform: uppercase;
-    font-weight: 800;
-    text-shadow:  0px 4px 5px rgba(0, 0, 0, 0.55);
-    width: 60%;
-    padding: 15% 0 0 6.2%;
+    font-weight: 900;
+    width: 100%;
+    padding: 30% 0 0 6.2%;
     line-height: 1.35em;
     letter-spacing: .04em;
 }
 .about-text-block-mob{
-    padding: 0 5vw;
+    width: 100vw;
+    height: auto;
 }
 .about-text-block-mob img{
     margin-left: 4vw;
@@ -1472,6 +1472,7 @@ border-radius: 0 0 5px 5px;
     text-align: justify;
     line-height: 1.1em;
     margin-top: -1vh;
+    padding: 0 5%;
 }
 .about-welcome-mob{
     text-indent: .4em;
@@ -1591,7 +1592,7 @@ border-radius: 0 0 5px 5px;
 .about-header{
     min-height: 410px;
     width:100%;
-    background-image: url("../img/about-he.png");
+    background-image: url("../img/Page2TopPic.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -1610,13 +1611,13 @@ border-radius: 0 0 5px 5px;
     padding-bottom: 2vh;
 }
 .our-university{
+    font-family: Roboto;
     font-size: 2.7em;
     color:#fff;
     text-transform: uppercase;
-    font-weight: 800;
-    text-shadow:  0px 4px 5px rgba(0, 0, 0, 0.55);
+    font-weight: 900;
     width: 60%;
-    padding: 15% 0 0 6.2%;
+    padding: 10% 0 0 6.2%;
     line-height: 1.35em;
     letter-spacing: .04em;
 }
@@ -1646,10 +1647,10 @@ border-radius: 0 0 5px 5px;
 .about-under-title{
     font-weight: 600;
     text-align: left;
-    margin: 0;
     padding: 0;
     text-indent: 1em;
-    margin-top: -2.5vh;
+    margin-top: -0.5vh;
+    margin-bottom: 1px;
 }
 .about-text-block img{
     margin-left: 1.1vw;
@@ -1660,6 +1661,9 @@ border-radius: 0 0 5px 5px;
     text-indent: 1em;
     margin-bottom: 0;
     line-height: 1.2em;
+}
+.content-page-3{
+    padding: 0 3%;
 }
 
 /*todo: ......................................................... ......:::::: Media ::::::......     */
@@ -1719,14 +1723,29 @@ border-radius: 0 0 5px 5px;
     }
     .choose_su_cards{
         width: 96%;
+        margin-top: 0;
+    }
+    .choose_su_cards hr{
+        width: 84% !important;
+        height: 1px;
+        margin-left: 8%;
+        opacity: .7;
+        background: linear-gradient(270deg, #001C54 0%, #001C54 100%);
+        margin-top: 5px;
+    }
+    .choose_su_cards__line{
+        justify-content: space-evenly;
     }
     .choose_su_cards__line_one{
         margin-bottom: 10px;
     }
     .choose_su_cards__card{
-        width: 25%;
         min-width: 74px;
         max-width: 120px;
+        position: relative;
+        height: 35px;
+        width: 80px;
+        padding: 3px 3px 3px 25px;
 
         border-radius: .25rem;
         text-transform: uppercase;
@@ -1736,12 +1755,6 @@ border-radius: 0 0 5px 5px;
         /*background: linear-gradient(149.94deg, #fffffd 18.76%, #faf8ff 75.67%);*/
         background: linear-gradient(149.94deg, #fffffd 18.76%, #faf8ff 75.67%);
         cursor: pointer;
-    }
-    .choose_su_cards__card{
-        position: relative;
-        height: 35px;
-        width: 90px;
-        padding: 3px 3px 3px 25px;
     }
     .choose_su_cards__card .text{
         margin-top: 3px;
@@ -1775,11 +1788,6 @@ border-radius: 0 0 5px 5px;
         width: 375px;
         display: flex;
     }
-    .rubric-main__right hr{
-        background-color: black !important;
-        height: 2px !important;
-        opacity: 1 !important;
-    }
     .rubric-main__right-wrapper{
         margin-top: 36px;
         width: 100vw;
@@ -1788,6 +1796,9 @@ border-radius: 0 0 5px 5px;
         padding-right: 0;
         box-sizing: content-box;
         position: relative;
+    }
+    .rubric-main__right-wrapper:after{
+        display: none;
     }
     .rubric-main__right-wrapper .rubric-main__right-nav{
         width: 320px;
@@ -1818,6 +1829,9 @@ border-radius: 0 0 5px 5px;
         width: 340px;
         font-size: 14px;
         line-height: 16px;
+    }
+    .rubric-main__right-wrapper .rubric-main__right-programs .program a{
+        color: #001C54;
     }
     .rubric-main{
         display: flex;
@@ -1854,6 +1868,74 @@ border-radius: 0 0 5px 5px;
         display: none;
     }*/
 }
+/*todo:                                                                         page2.html                */
 
+.idx2__all_programs-mob{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+    box-sizing: content-box;
+    margin-bottom: 30px;
+}
+.idx2__all_programs-mob .program{
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 19px;
+    position: relative;
+    height: 62px;
+    width: 30%;
+    min-width: 300px;
+    padding: 15px 25px 15px 45px;
+    box-shadow: 1px 1px 15px lightgray;
+    border-radius: .25rem;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: all linear .2s;
+}
+.idx2__all_programs-mob .program a{
+    color: #001C54;
+}
+/*.rubric-main__right-wrapper .rubric-main__right-programs .program:nth-child(1){
+    margin-top: 15px;
+}*/
+.idx2__all_programs-mob .program:before{
+    position: absolute;
+    right: 10px;
+    top: calc(50% - 8px);
+    opacity: 0;
+    transition: all linear .2s;
+    content: url("../img/Polygon 1.svg");
+    filter: drop-shadow( 2px 2px 2px grey);
+}
+.idx2__all_programs-mob .program:hover::before{
+    opacity: 1;
+}
+.idx2__all_programs-mob .program:hover{
+    z-index: 4;
+    /*width: 31%;*/
+    font-size: 17px;
+    box-shadow: 1px 1px 15px grey;
+    line-height: 18px;
+}
+.idx2__all_programs-mob .program i{
+    text-shadow: 1px 1px 3px gray;
+}
+.idx2__all_programs-mob .program:hover i{
+    color: #E00000;
+}
+.idx2__all_programs-mob .program.active{
+    z-index: 4;
+    width: 96%;
+}
+.idx2__all_programs-mob .program i{
+    font-size: 8px;
+    position: absolute;
+    top: calc(50% - 4px);
+    left: 20px;
+    transition: all linear .2s;
+}
 
 
