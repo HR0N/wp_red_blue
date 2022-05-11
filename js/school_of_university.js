@@ -5,18 +5,24 @@ class School_of_university extends Class_Father{
         this.programs = this.find('.rubric-main__right-programs');
         this.nav_up = this.find('.rubric-main__right-nav .nav .nav-up');
         this.nav_down = this.find('.rubric-main__right-nav .nav .nav-down');
+        this.rubric_main__left_top = this.find('.rubric-main__left-top');
 
         this.state = {active_card: 0};
         this.events();
     }
     cards_remove_active(){
         this.cards.map((key, val) => {$(val).removeClass('active')});
+        this.rubric_main__left_top.map((k, v) => {$(v).removeClass('active')});
     }
     card_add_active(e){
         $(e.currentTarget).addClass('active');
         let active_index = $(e.currentTarget).index();
         if($(e.currentTarget).parent().hasClass('choose_su_cards__line_two')){active_index += 4;}
         this.state.active_card = active_index;
+        this.rubric_main__left_top.map((k, v) => {
+            if($(v).index() === this.state.active_card){
+                $(v).addClass('active');
+            }});
     }
     sort_programs(){
         this.programs.map((key, val) => {

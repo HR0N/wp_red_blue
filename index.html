@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style/MobileStyle.css">
 </head>
 <body>
-<!--/*todo: ......................................... ......:::::: must Enable All Embed Players ::::::......     */-->
+/*todo: ......................................... ......:::::: must Enable All Embed Players ::::::......     */
 <header>
     <div class="head">
         <div class="head-logo">
@@ -94,6 +94,7 @@
             </form>
         </div>
         <button id="online" class="sm-button">Online payment <img src="icons/paymentWhite.png" alt=""></button>
+        <button id="online2" class="sm-button">Home IEU <img src="icons/passport.png" alt=""></button>
         <div class="nav-box">
             <ul class="left-menu">
                 <li><a href="#">Home</a></li>
@@ -141,17 +142,6 @@
                         <li><i class="fas fa-play sub-left-fa"></i><a href="#">Other information</a></li>
                     </ul>
                 </li>
-                <li class="parent-li"><a href="#">International activity <i class="fas fa-play main-left-fa"></i></a>
-                    <ul class="submenu">
-                        <li><i class="fas fa-play sub-left-fa"></i><a href="#">General information</a></li>
-                        <li><i class="fas fa-play sub-left-fa"></i><a href="#">About IEU</a></li>
-                        <li><i class="fas fa-play sub-left-fa"></i><a href="#">Our services</a></li>
-                        <li><i class="fas fa-play sub-left-fa"></i><a href="#">Our offices</a></li>
-                        <li><i class="fas fa-play sub-left-fa"></i><a href="#">Contact us</a></li>
-                        <li><i class="fas fa-play sub-left-fa"></i><a href="#">Download application</a></li>
-                        <li><i class="fas fa-play sub-left-fa"></i><a href="#">Other information</a></li>
-                    </ul>
-                </li>
                 <li class="parent-li"><a href="#">Students life <i class="fas fa-play main-left-fa"></i></a>
                     <ul class="submenu">
                         <li><i class="fas fa-play sub-left-fa"></i><a href="#">General information</a></li>
@@ -188,6 +178,101 @@
             </div>
         </div>
         <!--КОНЕЦ ФУТЕР-->
+        <!--        ДОПОЛНИТЕЛЬНОЕ МЕНЮ-->
+        <div id="left-slide" class="non-visible-menu hidden">
+            <div id="slide-menu" class="frst-ch">
+                <div class="lists">
+                    <h3>About us</h3>
+                    <ul>
+                        <li class="a">Home</li>
+                        <li class="a">About REC</li>
+                        <li class="a">Our Services</li>
+                        <li class="a">Our Offices</li>
+                        <li class="a">Contact us</li>
+                        <li class="a">Download Application Form</li>
+                        <li class="a">Apply Online</li>
+                    </ul>
+                </div>
+                <div class="lists">
+                    <h3>Universities</h3>
+                    <ul>
+                        <li class="a">Administrative</li>
+                        <li class="a">Agricultural</li>
+                        <li class="a">Arts & Culture</li>
+                        <li class="a">Avizition / Acrospace</li>
+                        <li class="a">Chemical Engeneering</li>
+                        <li class="a">Civil & Archticture</li>
+                        <li class="a">Economics</li>
+                    </ul>
+                </div>
+                <div class="lists">
+                    <h3>Services</h3>
+                    <ul>
+                        <li class="a">Apply Online</li>
+                        <li class="a">About Russia</li>
+                        <li class="a">Education in Russia</li>
+                        <li class="a">Why Education in Russia</li>
+                        <li class="a">Academic Calendar & Holidays</li>
+                        <li class="a">Admission 2020-2021</li>
+                        <li class="a">Admission Procedure</li>
+                    </ul>
+                </div>
+                <div class="lists">
+                    <h3>Adress</h3>
+                    <ul>
+                        <li class="a">42 V Academician Gluskov </li>
+                        <li>Avenue, Kyiv, Ukraine - 03187</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="slide-menu">
+                <div class="lists">
+                    <h3>About us</h3>
+                    <ul>
+                        <li class="a">Home</li>
+                        <li class="a">About REC</li>
+                        <li class="a">Our Services</li>
+                        <li class="a">Our Offices</li>
+                        <li class="a">Contact us</li>
+                        <li class="a">Download Application Form</li>
+                        <li class="a">Apply Online</li>
+                    </ul>
+                </div>
+                <div class="lists lists-sec">
+                    <h3>Universities</h3>
+                    <ul>
+                        <li class="a">Administrative</li>
+                        <li class="a">Agricultural</li>
+                        <li class="a">Arts & Culture</li>
+                        <li class="a">Avizition / Acrospace</li>
+                        <li class="a">Chemical Engeneering</li>
+                        <li class="a">Civil & Archticture</li>
+                        <li class="a">Economics</li>
+                    </ul>
+                </div>
+                <div class="lists lists-thr">
+                    <h3>Services</h3>
+                    <ul>
+                        <li class="a">Apply Online</li>
+                        <li class="a">About Russia</li>
+                        <li class="a">Education in Russia</li>
+                        <li class="a">Why Education in Russia</li>
+                        <li class="a">Academic Calendar & Holidays</li>
+                        <li class="a">Admission 2020-2021</li>
+                        <li class="a">Admission Procedure</li>
+                    </ul>
+                </div>
+                <div class="list-form">
+                    <form>
+                        <h2>Complete the form</h2>
+                        <input placeholder="Name">
+                        <input placeholder="Phone">
+                        <input placeholder="Email">
+                        <button>Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <!--        ДОПОЛНИТЕЛЬНОЕ МЕНЮ КОНЕЦ-->
         <div class="top-slider">
             <div class="top-slider-slide top-slider-slide-active">
@@ -263,12 +348,12 @@
         <div class="rubric-main">
             <div class="rubric-main__wrapper">
                 <div class="rubric-main__left">
-                    <div class="rubric-main__left-top">
+                    <div class="rubric-main__left-top card-1 active">
                         <div class="left-block">
-                            <div class="top_title_card">EUROPEAN</div>
-                            <div class="mid_title_card">MEDICAL SCHOOL</div>
+                            <div class="top_title_card">EUROPEAN 1</div>
+                            <div class="mid_title_card">MEDICAL SCHOOL 1</div>
                             <div class="bot_title_card">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. </div>
+                                industry. 1</div>
                             <div class="footer_title_card">
                                 <a href="/">Open all programs &nbsp;
                                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
@@ -276,7 +361,112 @@
                                     </svg></a>
                             </div>
                         </div>
-                        <div class="right-block"><img src="img/school_of_university__0.png" alt="img"></div>
+                        <div class="right-block"><img src="img/school_of_university__0.1.png" alt="img"></div>
+                    </div>
+                    <div class="rubric-main__left-top card-2">
+                        <div class="left-block">
+                            <div class="top_title_card">EUROPEAN 2</div>
+                            <div class="mid_title_card">MEDICAL SCHOOL 2</div>
+                            <div class="bot_title_card">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. 2</div>
+                            <div class="footer_title_card">
+                                <a href="/">Open all programs &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                        <path d="M11.3326 7.94337C12.2225 7.42961 12.2225 6.1452 11.3326 5.63144L2.15336 0.331799C1.2635 -0.181962 0.15117 0.460238 0.15117 1.48776V12.087C0.15117 13.1146 1.26349 13.7568 2.15335 13.243L11.3326 7.94337Z" fill="#E00000"/>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="right-block"><img src="img/school_of_university__0.2.png" alt="img"></div>
+                    </div>
+                    <div class="rubric-main__left-top card-3">
+                        <div class="left-block">
+                            <div class="top_title_card">EUROPEAN 3</div>
+                            <div class="mid_title_card">MEDICAL SCHOOL 3</div>
+                            <div class="bot_title_card">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. 3</div>
+                            <div class="footer_title_card">
+                                <a href="/">Open all programs &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                        <path d="M11.3326 7.94337C12.2225 7.42961 12.2225 6.1452 11.3326 5.63144L2.15336 0.331799C1.2635 -0.181962 0.15117 0.460238 0.15117 1.48776V12.087C0.15117 13.1146 1.26349 13.7568 2.15335 13.243L11.3326 7.94337Z" fill="#E00000"/>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="right-block"><img src="img/school_of_university__0.3.png" alt="img"></div>
+                    </div>
+                    <div class="rubric-main__left-top card-4">
+                        <div class="left-block">
+                            <div class="top_title_card">EUROPEAN 4</div>
+                            <div class="mid_title_card">MEDICAL SCHOOL 4</div>
+                            <div class="bot_title_card">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. 4</div>
+                            <div class="footer_title_card">
+                                <a href="/">Open all programs &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                        <path d="M11.3326 7.94337C12.2225 7.42961 12.2225 6.1452 11.3326 5.63144L2.15336 0.331799C1.2635 -0.181962 0.15117 0.460238 0.15117 1.48776V12.087C0.15117 13.1146 1.26349 13.7568 2.15335 13.243L11.3326 7.94337Z" fill="#E00000"/>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="right-block"><img src="img/school_of_university__0.4.png" alt="img"></div>
+                    </div>
+                    <div class="rubric-main__left-top card-5">
+                        <div class="left-block">
+                            <div class="top_title_card">EUROPEAN 5</div>
+                            <div class="mid_title_card">MEDICAL SCHOOL 5</div>
+                            <div class="bot_title_card">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. 5</div>
+                            <div class="footer_title_card">
+                                <a href="/">Open all programs &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                        <path d="M11.3326 7.94337C12.2225 7.42961 12.2225 6.1452 11.3326 5.63144L2.15336 0.331799C1.2635 -0.181962 0.15117 0.460238 0.15117 1.48776V12.087C0.15117 13.1146 1.26349 13.7568 2.15335 13.243L11.3326 7.94337Z" fill="#E00000"/>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="right-block"><img src="img/school_of_university__0.5.png" alt="img"></div>
+                    </div>
+                    <div class="rubric-main__left-top card-6">
+                        <div class="left-block">
+                            <div class="top_title_card">EUROPEAN 6</div>
+                            <div class="mid_title_card">MEDICAL SCHOOL 6</div>
+                            <div class="bot_title_card">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. 6</div>
+                            <div class="footer_title_card">
+                                <a href="/">Open all programs &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                        <path d="M11.3326 7.94337C12.2225 7.42961 12.2225 6.1452 11.3326 5.63144L2.15336 0.331799C1.2635 -0.181962 0.15117 0.460238 0.15117 1.48776V12.087C0.15117 13.1146 1.26349 13.7568 2.15335 13.243L11.3326 7.94337Z" fill="#E00000"/>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="right-block"><img src="img/school_of_university__0.6.png" alt="img"></div>
+                    </div>
+                    <div class="rubric-main__left-top card-7">
+                        <div class="left-block">
+                            <div class="top_title_card">EUROPEAN 7</div>
+                            <div class="mid_title_card">MEDICAL SCHOOL 7</div>
+                            <div class="bot_title_card">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. 7</div>
+                            <div class="footer_title_card">
+                                <a href="/">Open all programs &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                        <path d="M11.3326 7.94337C12.2225 7.42961 12.2225 6.1452 11.3326 5.63144L2.15336 0.331799C1.2635 -0.181962 0.15117 0.460238 0.15117 1.48776V12.087C0.15117 13.1146 1.26349 13.7568 2.15335 13.243L11.3326 7.94337Z" fill="#E00000"/>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="right-block"><img src="img/school_of_university__0.7.png" alt="img"></div>
+                    </div>
+                    <div class="rubric-main__left-top card-8">
+                        <div class="left-block">
+                            <div class="top_title_card">EUROPEAN 8</div>
+                            <div class="mid_title_card">MEDICAL SCHOOL 8</div>
+                            <div class="bot_title_card">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. 8</div>
+                            <div class="footer_title_card">
+                                <a href="/">Open all programs &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                        <path d="M11.3326 7.94337C12.2225 7.42961 12.2225 6.1452 11.3326 5.63144L2.15336 0.331799C1.2635 -0.181962 0.15117 0.460238 0.15117 1.48776V12.087C0.15117 13.1146 1.26349 13.7568 2.15335 13.243L11.3326 7.94337Z" fill="#E00000"/>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="right-block"><img src="img/school_of_university__0.8.png" alt="img"></div>
                     </div>
                     <div class="rubric-main__left-bot">
                         <div class="choose_su_cards">
@@ -927,7 +1117,7 @@
                     <img src="img/brainstorm.png" alt="">
                 </div>
                 <div class="carousel-items carousel-items-middle" id="liteitemtwo">
-<!--&lt;!&ndash;                    <iframe width="470" height="100%" src="https://www.youtube.com/embed/BOz3crYuPiA" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>&ndash;&gt;-->
+<!--                    <iframe width="470" height="100%" src="https://www.youtube.com/embed/BOz3crYuPiA" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                 </div>
                 <div class="carousel-items carousel-items-right" id="liteitemthree">
                     <img src="img/brainstorm.png" alt="">
@@ -960,7 +1150,7 @@
                     <img src="img/brainstorm.png" alt="">
                 </div>
                 <div class="litebox-item">
-<!--                    <iframe width="60%" height="85%" src="https://www.youtube.com/embed/BOz3crYuPiA" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                    <iframe width="60%" height="85%" src="https://www.youtube.com/embed/BOz3crYuPiA" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="litebox-item">
                     <img src="img/brainstorm.png" alt="">
@@ -1099,7 +1289,7 @@
                     </div>
                 </div>
                 <div class="google-map">
-<!--                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.2399329108216!2d30.43618631526164!3d50.36208040161017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c84da58ea51f%3A0x27d1232337d4714!2z0L_RgNC-0YHQvy4g0JDQutCw0LTQtdC80LjQutCwINCT0LvRg9GI0LrQvtCy0LAsIDQy0JIsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1634669474221!5m2!1sru!2sua" style="border:0; width:100%;" allowfullscreen="" loading="lazy"></iframe>-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.2399329108216!2d30.43618631526164!3d50.36208040161017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c84da58ea51f%3A0x27d1232337d4714!2z0L_RgNC-0YHQvy4g0JDQutCw0LTQtdC80LjQutCwINCT0LvRg9GI0LrQvtCy0LAsIDQy0JIsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1634669474221!5m2!1sru!2sua" style="border:0; width:100%;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -1208,33 +1398,33 @@
         <ul class="mob-navigation">
             <li id="fCont" class="mob-parent-li" onclick="">Education <i class="fas fa-play mob-nav-fa"></i>
                 <ul class="mob-submenu" id="fSub">
-                    <li>General&nbspinformation</li>
-                    <li><a href="about.html">About&nbspIEU</a></li>
-                    <li>Our&nbspservices</li>
-                    <li>Our&nbspoffices</li>
-                    <li>Contact&nbspus</li>
-                    <li>Download&nbspapplication</li>
-                    <li></i>Other&nbspinformation</li>
+                    <li>General&nbsp;information</li>
+                    <li><a href="about.html">About&nbsp;IEU</a></li>
+                    <li>Our&nbsp;services</li>
+                    <li>Our&nbsp;offices</li>
+                    <li>Contact&nbsp;us</li>
+                    <li>Download&nbsp;application</li>
+                    <li></i>Other&nbsp;information</li>
                 </ul></li>
             <li id="sCont" class="mob-parent-li" onclick="">Admission  <i class="fas fa-play mob-nav-fa"></i>
                 <ul class="mob-submenu" id="sSub">
-                    <li>General&nbspinformation</li>
-                    <li>About&nbspIEU</li>
-                    <li>Our&nbspservices</li>
-                    <li>Our&nbspoffices</li>
-                    <li>Contact&nbspus</li>
-                    <li>Download&nbspapplication</li>
-                    <li></i>Other&nbspinformation</li>
+                    <li>General&nbsp;information</li>
+                    <li>About&nbsp;IEU</li>
+                    <li>Our&nbsp;services</li>
+                    <li>Our&nbsp;offices</li>
+                    <li>Contact&nbsp;us</li>
+                    <li>Download&nbsp;application</li>
+                    <li></i>Other&nbsp;information</li>
                 </ul></li>
             <li id="tCont" class="mob-parent-li" onclick="">Schools  <i class="fas fa-play mob-nav-fa"></i>
                 <ul class="mob-submenu" id="tSub">
-                    <li>General&nbspinformation</li>
-                    <li>About&nbspIEU</li>
-                    <li>Our&nbspservices</li>
-                    <li>Our&nbspoffices</li>
-                    <li>Contact&nbspus</li>
-                    <li>Download&nbspapplication</li>
-                    <li></i>Other&nbspinformation</li>
+                    <li>General&nbsp;information</li>
+                    <li>About&nbsp;IEU</li>
+                    <li>Our&nbsp;services</li>
+                    <li>Our&nbsp;offices</li>
+                    <li>Contact&nbsp;us</li>
+                    <li>Download&nbsp;application</li>
+                    <li></i>Other&nbsp;information</li>
                 </ul></li>
         </ul>
     </div>
@@ -1242,38 +1432,38 @@
 </div>
 <div class="mob-top-slider">
     <div class="mob-top-slider-item mob-top-slider-item-active ">
-        <h2 id="mob-up"> Admissions<br><span>are open</span></h2>
-        <h3>european<br> international <br>university</h3>
-        <button class="mob-study-campus">Study on campus</button>
-        <button class="mob-study-online">Study online</button>
+        <!--        <h2 id="mob-up"> Admissions<br><span>are open</span></h2>-->
+        <!--        <h3></h3>-->
+        <!--        <button class="mob-study-campus">Study on campus</button>-->
+        <button class="mob-study-online">Join now</button>
     </div>
-    <div class="mob-top-slider-item">
-        <h2> Admissions<br><span>are open</span></h2>
-        <h3>european<br> international <br>university</h3>
-        <button class="mob-study-campus">Study on campus</button>
-        <button class="mob-study-online">Study online</button>
-    </div>
-    <div class="mob-top-slider-item">
-        <h2> Admissions<br><span>are open</span></h2>
-        <h3>european<br> international <br>university</h3>
-        <button class="mob-study-campus">Study on campus</button>
-        <button class="mob-study-online">Study online</button>
-    </div>
-    <div class="mob-top-slider-item">
-        <h2> Admissions<br><span>are open</span></h2>
-        <h3>european<br> international <br>university</h3>
-        <button class="mob-study-campus">Study on campus</button>
-        <button class="mob-study-online">Study online</button>
-    </div>
-    <div class="mob-top-slider-control">
-        <img src="icons/arr.svg" alt="" class="mob-top-slider-prev" id="mob-top-slider-prev">
-        <div class="mob-top-slider-dot mob-top-slider-dot-active"></div>
-        <div class="mob-top-slider-dot"></div>
-        <div class="mob-top-slider-dot"></div>
-        <div class="mob-top-slider-dot"></div>
-        <img src="icons/next-b.png" alt="" class="mob-top-slider-next" id="mob-top-slider-next">
-    </div>
-<!--    **************************MOBILE-FOOTER************************-->
+    <!--    <div class="mob-top-slider-item">-->
+    <!--        <h2> Admissions<br><span>are open</span></h2>-->
+    <!--        <h3>european<br> international <br>university</h3>-->
+    <!--        <button class="mob-study-campus">Study on campus</button>-->
+    <!--        <button class="mob-study-online">Study online</button>-->
+    <!--    </div>-->
+    <!--    <div class="mob-top-slider-item">-->
+    <!--        <h2> Admissions<br><span>are open</span></h2>-->
+    <!--        <h3>european<br> international <br>university</h3>-->
+    <!--        <button class="mob-study-campus">Study on campus</button>-->
+    <!--        <button class="mob-study-online">Study online</button>-->
+    <!--    </div>-->
+    <!--    <div class="mob-top-slider-item">-->
+    <!--        <h2> Admissions<br><span>are open</span></h2>-->
+    <!--        <h3>european<br> international <br>university</h3>-->
+    <!--        <button class="mob-study-campus">Study on campus</button>-->
+    <!--        <button class="mob-study-online">Study online</button>-->
+    <!--    </div>-->
+    <!--    <div class="mob-top-slider-control">-->
+    <!--        <img src="icons/arr.svg" alt="" class="mob-top-slider-prev" id="mob-top-slider-prev">-->
+    <!--        <div class="mob-top-slider-dot mob-top-slider-dot-active"></div>-->
+    <!--        <div class="mob-top-slider-dot"></div>-->
+    <!--        <div class="mob-top-slider-dot"></div>-->
+    <!--        <div class="mob-top-slider-dot"></div>-->
+    <!--        <img src="icons/next-b.png" alt="" class="mob-top-slider-next" id="mob-top-slider-next">-->
+    <!--    </div>-->
+    <!--    **************************MOBILE-FOOTER************************-->
     <div class="mob-footer">
         <h3>Complete the form</h3>
         <form action="" class="footer-mob-form">
@@ -1303,9 +1493,367 @@
         <h2>School of University</h2>
         <img src="img/line.png" alt="">
     </div>
+    <div class="rubric-main">
+        <div class="rubric-main__wrapper">
+            <div class="rubric-main__left">
+                <div class="rubric-main__left-top card-1 active">
+                    <div class="left-block">
+                        <div class="top_title_card">EUROPEAN 1</div>
+                        <div class="mid_title_card">MEDICAL SCHOOL 1</div>
+                        <div class="bot_title_card">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. 1</div>
+                        <div class="footer_title_card">
+                            <a href="/">Open all programs &nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                    <path d="M11.3326 7.94337C12.2225 7.42961 12.2225 6.1452 11.3326 5.63144L2.15336 0.331799C1.2635 -0.181962 0.15117 0.460238 0.15117 1.48776V12.087C0.15117 13.1146 1.26349 13.7568 2.15335 13.243L11.3326 7.94337Z" fill="#E00000"/>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="right-block"><img src="img/school_of_university__0.1.png" alt="img"></div>
+                </div>
+                <div class="rubric-main__left-top card-2">
+                    <div class="left-block">
+                        <div class="top_title_card">EUROPEAN 2</div>
+                        <div class="mid_title_card">MEDICAL SCHOOL 2</div>
+                        <div class="bot_title_card">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. 2</div>
+                        <div class="footer_title_card">
+                            <a href="/">Open all programs &nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                    <path d="M11.3326 7.94337C12.2225 7.42961 12.2225 6.1452 11.3326 5.63144L2.15336 0.331799C1.2635 -0.181962 0.15117 0.460238 0.15117 1.48776V12.087C0.15117 13.1146 1.26349 13.7568 2.15335 13.243L11.3326 7.94337Z" fill="#E00000"/>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="right-block"><img src="img/school_of_university__0.2.png" alt="img"></div>
+                </div>
+                <div class="rubric-main__left-top card-3">
+                    <div class="left-block">
+                        <div class="top_title_card">EUROPEAN 3</div>
+                        <div class="mid_title_card">MEDICAL SCHOOL 3</div>
+                        <div class="bot_title_card">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. 3</div>
+                        <div class="footer_title_card">
+                            <a href="/">Open all programs &nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                    <path d="M11.3326 7.94337C12.2225 7.42961 12.2225 6.1452 11.3326 5.63144L2.15336 0.331799C1.2635 -0.181962 0.15117 0.460238 0.15117 1.48776V12.087C0.15117 13.1146 1.26349 13.7568 2.15335 13.243L11.3326 7.94337Z" fill="#E00000"/>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="right-block"><img src="img/school_of_university__0.3.png" alt="img"></div>
+                </div>
+                <div class="rubric-main__left-top card-4">
+                    <div class="left-block">
+                        <div class="top_title_card">EUROPEAN 4</div>
+                        <div class="mid_title_card">MEDICAL SCHOOL 4</div>
+                        <div class="bot_title_card">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. 4</div>
+                        <div class="footer_title_card">
+                            <a href="/">Open all programs &nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                    <path d="M11.3326 7.94337C12.2225 7.42961 12.2225 6.1452 11.3326 5.63144L2.15336 0.331799C1.2635 -0.181962 0.15117 0.460238 0.15117 1.48776V12.087C0.15117 13.1146 1.26349 13.7568 2.15335 13.243L11.3326 7.94337Z" fill="#E00000"/>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="right-block"><img src="img/school_of_university__0.4.png" alt="img"></div>
+                </div>
+                <div class="rubric-main__left-top card-5">
+                    <div class="left-block">
+                        <div class="top_title_card">EUROPEAN 5</div>
+                        <div class="mid_title_card">MEDICAL SCHOOL 5</div>
+                        <div class="bot_title_card">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. 5</div>
+                        <div class="footer_title_card">
+                            <a href="/">Open all programs &nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                    <path d="M11.3326 7.94337C12.2225 7.42961 12.2225 6.1452 11.3326 5.63144L2.15336 0.331799C1.2635 -0.181962 0.15117 0.460238 0.15117 1.48776V12.087C0.15117 13.1146 1.26349 13.7568 2.15335 13.243L11.3326 7.94337Z" fill="#E00000"/>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="right-block"><img src="img/school_of_university__0.5.png" alt="img"></div>
+                </div>
+                <div class="rubric-main__left-top card-6">
+                    <div class="left-block">
+                        <div class="top_title_card">EUROPEAN 6</div>
+                        <div class="mid_title_card">MEDICAL SCHOOL 6</div>
+                        <div class="bot_title_card">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. 6</div>
+                        <div class="footer_title_card">
+                            <a href="/">Open all programs &nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                    <path d="M11.3326 7.94337C12.2225 7.42961 12.2225 6.1452 11.3326 5.63144L2.15336 0.331799C1.2635 -0.181962 0.15117 0.460238 0.15117 1.48776V12.087C0.15117 13.1146 1.26349 13.7568 2.15335 13.243L11.3326 7.94337Z" fill="#E00000"/>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="right-block"><img src="img/school_of_university__0.6.png" alt="img"></div>
+                </div>
+                <div class="rubric-main__left-top card-7">
+                    <div class="left-block">
+                        <div class="top_title_card">EUROPEAN 7</div>
+                        <div class="mid_title_card">MEDICAL SCHOOL 7</div>
+                        <div class="bot_title_card">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. 7</div>
+                        <div class="footer_title_card">
+                            <a href="/">Open all programs &nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                    <path d="M11.3326 7.94337C12.2225 7.42961 12.2225 6.1452 11.3326 5.63144L2.15336 0.331799C1.2635 -0.181962 0.15117 0.460238 0.15117 1.48776V12.087C0.15117 13.1146 1.26349 13.7568 2.15335 13.243L11.3326 7.94337Z" fill="#E00000"/>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="right-block"><img src="img/school_of_university__0.7.png" alt="img"></div>
+                </div>
+                <div class="rubric-main__left-top card-8">
+                    <div class="left-block">
+                        <div class="top_title_card">EUROPEAN 8</div>
+                        <div class="mid_title_card">MEDICAL SCHOOL 8</div>
+                        <div class="bot_title_card">&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. 8</div>
+                        <div class="footer_title_card">
+                            <a href="/">Open all programs &nbsp;
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                    <path d="M11.3326 7.94337C12.2225 7.42961 12.2225 6.1452 11.3326 5.63144L2.15336 0.331799C1.2635 -0.181962 0.15117 0.460238 0.15117 1.48776V12.087C0.15117 13.1146 1.26349 13.7568 2.15335 13.243L11.3326 7.94337Z" fill="#E00000"/>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="right-block"><img src="img/school_of_university__0.8.png" alt="img"></div>
+                </div>
+                <div class="rubric-main__left-bot">
+                    <div class="choose_su_cards">
+                        <div class="choose_su_cards__line choose_su_cards__line_one">
+                            <div class="choose_su_cards__card card-1 active">
+                                <div class="img">
+                                    <img class="img_blue" src="./img/school_of_university__1.1.png" alt="img">
+                                    <img class="img_white" src="./img/school_of_university__1.2.png" alt="img">
+                                </div>
+                                <div class="text"><div class="top">european</div><div class="bot">medical school</div></div>
+                            </div>
+                            <div class="choose_su_cards__card card-2">
+                                <div class="img">
+                                    <img class="img_blue" src="./img/school_of_university__2.1.png" alt="img">
+                                    <img class="img_white" src="./img/school_of_university__2.2.png" alt="img">
+                                </div>
+                                <div class="text"><div class="top">european</div><div class="bot">business school</div></div>
+                            </div>
+                            <div class="choose_su_cards__card card-3">
+                                <div class="img">
+                                    <img class="img_blue" src="./img/school_of_university__3.1.png" alt="img">
+                                    <img class="img_white" src="./img/school_of_university__3.2.png" alt="img">
+                                </div>
+                                <div class="text"><div class="top">european</div><div class="bot">ARCHITECTURE AND ENGINEERING school</div></div>
+                            </div>
+                            <div class="choose_su_cards__card card-4">
+                                <div class="img">
+                                    <img class="img_blue" src="./img/school_of_university__4.1.png" alt="img">
+                                    <img class="img_white" src="./img/school_of_university__4.2.png" alt="img">
+                                </div>
+                                <div class="text"><div class="top">european</div><div class="bot">language school</div></div>
+                            </div>
+                        </div>
+                        <div class="choose_su_cards__line choose_su_cards__line_two">
+                            <div class="choose_su_cards__card card-5">
+                                <div class="img">
+                                    <img class="img_blue" src="./img/school_of_university__5.1.png" alt="img">
+                                    <img class="img_white" src="./img/school_of_university__5.2.png" alt="img">
+                                </div>
+                                <div class="text"><div class="top">european</div><div class="bot">it school</div></div>
+                            </div>
+                            <div class="choose_su_cards__card card-6">
+                                <div class="img">
+                                    <img class="img_blue" src="./img/school_of_university__6.1.png" alt="img">
+                                    <img class="img_white" src="./img/school_of_university__6.2.png" alt="img">
+                                </div>
+                                <div class="text"><div class="top">european</div><div class="bot">school of law</div></div>
+                            </div>
+                            <div class="choose_su_cards__card card-7">
+                                <div class="img">
+                                    <img class="img_blue" src="./img/school_of_university__7.1.png" alt="img">
+                                    <img class="img_white" src="./img/school_of_university__7.2.png" alt="img">
+                                </div>
+                                <div class="text"><div class="top">european</div><div class="bot">HUMANITIES school</div></div>
+                            </div>
+                            <div class="choose_su_cards__card card-8">
+                                <div class="img">
+                                    <img class="img_blue" src="./img/school_of_university__8.1.png" alt="img">
+                                    <img class="img_white" src="./img/school_of_university__8.2.png" alt="img">
+                                </div>
+                                <div class="text"><div class="top">european</div><div class="bot">LIFE SCIENCEs school</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rubric-main__right">
+                <div class="rubric-main__right-wrapper">
+                    <div class="rubric-main__right-nav">
+                        <div class="text">Programs</div>
+                        <div class="nav">
+                            <img class="nav-up" src="./img/left_arrow.svg" alt="img">
+                            <img class="nav-down" src="./img/left_arrow.svg" alt="img">
+                        </div>
+                    </div>
+                    <div class="rubric-main__right-programs programs-1 active">
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, MEDICAL SCHOOL 1</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, MEDICAL SCHOOL 2</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, MEDICAL SCHOOL 3</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, MEDICAL SCHOOL 4</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, MEDICAL SCHOOL 5</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, MEDICAL SCHOOL 6</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, MEDICAL SCHOOL 7</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, MEDICAL SCHOOL 8</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, MEDICAL SCHOOL 9</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, MEDICAL SCHOOL 10</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, MEDICAL SCHOOL 11</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, MEDICAL SCHOOL 12</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, MEDICAL SCHOOL 13</div>
+                    </div>
+                    <div class="rubric-main__right-programs programs-2">
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, BUSINESS SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, BUSINESS SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, BUSINESS SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, BUSINESS SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, BUSINESS SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, BUSINESS SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, BUSINESS SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, BUSINESS SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, BUSINESS SCHOOL</div>
+                    </div>
+                    <div class="rubric-main__right-programs programs-3">
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, ARCHITECTURE AND ENGINEERING SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, ARCHITECTURE AND ENGINEERING SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, ARCHITECTURE AND ENGINEERING SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, ARCHITECTURE AND ENGINEERING SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, ARCHITECTURE AND ENGINEERING SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, ARCHITECTURE AND ENGINEERING SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, ARCHITECTURE AND ENGINEERING SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, ARCHITECTURE AND ENGINEERING SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, ARCHITECTURE AND ENGINEERING SCHOOL</div>
+                    </div>
+                    <div class="rubric-main__right-programs programs-4">
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LANGUAGE SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LANGUAGE SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LANGUAGE SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LANGUAGE SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LANGUAGE SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LANGUAGE SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LANGUAGE SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LANGUAGE SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LANGUAGE SCHOOL</div>
+                    </div>
+                    <div class="rubric-main__right-programs programs-5">
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, IT SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, IT SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, IT SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, IT SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, IT SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, IT SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, IT SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, IT SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, IT SCHOOL</div>
+                    </div>
+                    <div class="rubric-main__right-programs programs-6">
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, SCHOOL OF LAW</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, SCHOOL OF LAW</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, SCHOOL OF LAW</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, SCHOOL OF LAW</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, SCHOOL OF LAW</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, SCHOOL OF LAW</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, SCHOOL OF LAW</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, SCHOOL OF LAW</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, SCHOOL OF LAW</div>
+                    </div>
+                    <div class="rubric-main__right-programs programs-7">
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, HUMANITIES SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, HUMANITIES SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, HUMANITIES SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, HUMANITIES SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, HUMANITIES SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, HUMANITIES SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, HUMANITIES SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, HUMANITIES SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, HUMANITIES SCHOOL</div>
+                    </div>
+                    <div class="rubric-main__right-programs programs-8">
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LIFE SCIENCES SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LIFE SCIENCES SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LIFE SCIENCES SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LIFE SCIENCES SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LIFE SCIENCES SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LIFE SCIENCES SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LIFE SCIENCES SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LIFE SCIENCES SCHOOL</div>
+                        <div class="program"><i class="fa fa-circle" aria-hidden="true"></i>Anesthesiology, resuscitation and intensive care, LIFE SCIENCES SCHOOL</div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="rubric-main__left-bot rubric-main__left-bot-clone">
+                <div class="choose_su_cards">
+                    <div class="choose_su_cards__line choose_su_cards__line_one">
+                        <div class="choose_su_cards__card card-1 active">
+                            <div class="img">
+                                <img class="img_blue" src="./img/school_of_university__1.1.png" alt="img">
+                                <img class="img_white" src="./img/school_of_university__1.2.png" alt="img">
+                            </div>
+                            <div class="text"><div class="top">european</div><div class="bot">medical school</div></div>
+                        </div>
+                        <div class="choose_su_cards__card card-2">
+                            <div class="img">
+                                <img class="img_blue" src="./img/school_of_university__2.1.png" alt="img">
+                                <img class="img_white" src="./img/school_of_university__2.2.png" alt="img">
+                            </div>
+                            <div class="text"><div class="top">european</div><div class="bot">business school</div></div>
+                        </div>
+                        <div class="choose_su_cards__card card-3">
+                            <div class="img">
+                                <img class="img_blue" src="./img/school_of_university__3.1.png" alt="img">
+                                <img class="img_white" src="./img/school_of_university__3.2.png" alt="img">
+                            </div>
+                            <div class="text"><div class="top">european</div><div class="bot">ARCHITECTURE AND ENGINEERING school</div></div>
+                        </div>
+                        <div class="choose_su_cards__card card-4">
+                            <div class="img">
+                                <img class="img_blue" src="./img/school_of_university__4.1.png" alt="img">
+                                <img class="img_white" src="./img/school_of_university__4.2.png" alt="img">
+                            </div>
+                            <div class="text"><div class="top">european</div><div class="bot">language school</div></div>
+                        </div>
+                    </div>
+                    <div class="choose_su_cards__line choose_su_cards__line_two">
+                        <div class="choose_su_cards__card card-5">
+                            <div class="img">
+                                <img class="img_blue" src="./img/school_of_university__5.1.png" alt="img">
+                                <img class="img_white" src="./img/school_of_university__5.2.png" alt="img">
+                            </div>
+                            <div class="text"><div class="top">european</div><div class="bot">it school</div></div>
+                        </div>
+                        <div class="choose_su_cards__card card-6">
+                            <div class="img">
+                                <img class="img_blue" src="./img/school_of_university__6.1.png" alt="img">
+                                <img class="img_white" src="./img/school_of_university__6.2.png" alt="img">
+                            </div>
+                            <div class="text"><div class="top">european</div><div class="bot">school of law</div></div>
+                        </div>
+                        <div class="choose_su_cards__card card-7">
+                            <div class="img">
+                                <img class="img_blue" src="./img/school_of_university__7.1.png" alt="img">
+                                <img class="img_white" src="./img/school_of_university__7.2.png" alt="img">
+                            </div>
+                            <div class="text"><div class="top">european</div><div class="bot">HUMANITIES school</div></div>
+                        </div>
+                        <div class="choose_su_cards__card card-8">
+                            <div class="img">
+                                <img class="img_blue" src="./img/school_of_university__8.1.png" alt="img">
+                                <img class="img_white" src="./img/school_of_university__8.2.png" alt="img">
+                            </div>
+                            <div class="text"><div class="top">european</div><div class="bot">LIFE SCIENCEs school</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!--конец 2 блок-->
-<div class="why-choose">
+<!--<div class="why-choose">
     <div class="mob-cat-head" id="choose">
         <h2>Why to Choose Us?</h2>
         <img src="img/line.png" alt="">
@@ -1562,6 +2110,90 @@
 
     </div>
     <button class="mob-show-more-btt">Show more +</button>
+</div>-->
+<div class="why-choose">
+    <div class="mob-cat-head" id="choose">
+        <h2>Why to Choose Us?</h2>
+        <img src="img/line.png" alt="">
+    </div>
+    <div class="mob-choose-us__section">
+        <div class="mob-choose-us__text">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting.
+
+            </p>
+        </div>
+        <div class="mob-choose-us-image">
+            <img src="img/Notebook.png" alt="">
+            <div class="mob-right-coll">
+                <a href="#">
+                        <span class="mob-pulse_wrapper">
+                            <img class="mob-pulse" src="img/Button-pulse.png" alt="">
+                            <span class="mob-pulse_bg"></span>
+                        </span>
+                    <p>Play&nbsp;Video</p></a>
+            </div>
+        </div>
+        <div class="mob-choose-us__text">
+            <p>Remaining essentially unchanged. It was popularised in the 1960s withthe release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker.
+            </p>
+        </div>
+        <div class="mob-bahelor-magister">
+
+            <div class="mob-Bachalors">
+                <span class="mob-year-num">4</span>
+                <span class="mob-year-red">year</span>
+                <span class="mob-sp-magi">Bachalors</span>
+            </div>
+            <div class="mob-Magisters">
+                <span class="mob-year-num">2</span>
+                <span class="mob-year-red">year</span>
+                <span class="mob-sp-magi">Magisters</span>
+
+            </div>
+        </div>
+        <button class="mobshowMore" id="mobSowMore">Play Video</button>
+
+    </div>
+</div>
+<div class="forms-education">
+    <div class="mob-cat-head">
+        <h2>Our Advantages</h2>
+        <img src="img/line.png" alt="">
+    </div>
+    <div class="mob-choose-us__icon-cards">
+        <div class="mob-choose-us__left-icons">
+            <div class="mob-choose-us__block">
+                <img src="img/why_1.png" alt="">
+            </div>
+            <div class="mob-choose-us__block">
+                <img src="img/why_2.png" alt="">
+            </div>
+        </div>
+        <div class="mob-choose-us__midle-icons">
+            <div class="mob-choose-us__block">
+                <img src="img/why_3.png" alt="">
+            </div>
+        </div>
+        <div class="mob-choose-us__right-icons">
+            <div class="mob-choose-us__block">
+                <img src="img/why_4.png" alt="">
+            </div>
+            <div class="mob-choose-us__block">
+                <img src="img/why_5.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="admission-process">
+    <div class="mob-cat-head" id="adm-process">
+        <h2>Admission Process</h2>
+        <img src="img/line.png" alt="">
+    </div>
+    <img src="img/steps-mob.png" alt="" class="steps-mob steps-mob-active">
+    <!--    <img src="img/steps-mob.png" alt="" class="steps-mob">-->
+    <!--    <img src="img/steps-mob.png" alt="" class="steps-mob">-->
+
 </div>
 <div class="galleryIEU">
     <div class="mob-cat-head" >
@@ -1573,7 +2205,7 @@
             <img src="img/brainstorm-meeting-mob.png" alt="">
         </div>
         <div class="mob-gallery-item">
-<!--            <iframe width="560" height="100%" src="https://www.youtube.com/embed/UP2XoGfhJ1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+            <iframe width="560" height="100%" src="https://www.youtube.com/embed/UP2XoGfhJ1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="mob-gallery-item mob-top-slider-item-active">
             <img src="img/brainstorm-meeting-mob.png" alt="">
@@ -1701,7 +2333,7 @@
         </div>
     </div>
     <div class="google-map">
-<!--        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.2399329108216!2d30.43618631526164!3d50.36208040161017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c84da58ea51f%3A0x27d1232337d4714!2z0L_RgNC-0YHQvy4g0JDQutCw0LTQtdC80LjQutCwINCT0LvRg9GI0LrQvtCy0LAsIDQy0JIsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1634669474221!5m2!1sru!2sua" style="border:0; width:100%;" allowfullscreen="" loading="lazy"></iframe>-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.2399329108216!2d30.43618631526164!3d50.36208040161017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c84da58ea51f%3A0x27d1232337d4714!2z0L_RgNC-0YHQvy4g0JDQutCw0LTQtdC80LjQutCwINCT0LvRg9GI0LrQvtCy0LAsIDQy0JIsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1634669474221!5m2!1sru!2sua" style="border:0; width:100%;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 </div>
 <div class="after-footer-mob">
@@ -1714,20 +2346,21 @@
 <!-- END JQ, bootstrap, fontawesome -->
 <!-- call JS class School_of_university for PC & mobile versions -->
 <script>$(document).ready(()=>{let class_1 = new School_of_university('.school_of_university')})</script>
+<script>$(document).ready(()=>{let class_2 = new School_of_university('.school_of_university__mobile')})</script>
 <!-- END call JS class School_of_university for PC & mobile versions -->
 <script src="js/mobDopMenu.js"></script>
 <script src="js/Mobcommentary.js"></script>
 <script src="js/mobGallery.js"></script>
-<script src="js/MobSecondHorizontalTabs.js"></script>
-<script src="js/recognMobTabs.js"></script>
-<script src="js/MobFrstHorizontalTabs.js"></script>
-<script src="js/accordion-mob.js"></script>
-<script src="js/mobtopSlider.js"></script>
+<!--<script src="js/MobSecondHorizontalTabs.js"></script>-->
+<!--<script src="js/recognMobTabs.js"></script>-->
+<!--<script src="js/MobFrstHorizontalTabs.js"></script>-->
+<!--<script src="js/accordion-mob.js"></script>-->
+<!--<script src="js/mobtopSlider.js"></script>-->
 <script src="js/dopMenu.js"></script>
 <!--<script src="js/topSlider.js"></script>-->
-<script src="js/accordion.js"></script>
-<script src="js/horizontalTabs.js"></script>
-<script src="js/verticalTab.js"></script>
+<!--<script src="js/accordion.js"></script>-->
+<!--<script src="js/horizontalTabs.js"></script>-->
+<!--<script src="js/verticalTab.js"></script>-->
 <script src="js/carousel.js"></script>
 <script src="js/commentary.js"></script>
 </body>

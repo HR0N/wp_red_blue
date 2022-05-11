@@ -277,8 +277,17 @@ lists-thr{
     background: #E00000;
     color: #fff;
     margin-top: 1.8vh;
-    margin-bottom: 6vh;
     font-size: .9vw;
+}
+#online2{
+    background: #F8F8F8;
+    color: #001C54;
+    margin-top: 1.8vh;
+    margin-bottom: 5%;
+    font-size: .9vw;
+}
+#online2 img{
+    margin-left: 33%;
 }
 #online img{
     margin-left: 8.5%;
@@ -393,15 +402,15 @@ position: relative;
     /*background: #E00000;*/
     /*border: 2px solid #E00000;*/
 }
-.top-slider-buttons{
-    margin: 4% 0 0 6%;
+.top-slider-buttons {
+    margin: 6% 0 0 8.5%;
 }
 #online-study{
     background: #001c54D9;
     border: 3px solid #FFFFFF;
     padding-left: 3.7%!important;
     padding-right: 3.7%!important;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 .top-slider{
     position: relative;
@@ -521,8 +530,11 @@ position: relative;
     width: calc(50% + 96px);
 }
 .rubric-main__left-top{
-    display: flex;
+    display: none;
     justify-content: space-between;
+}
+.rubric-main__left-top.active{
+    display: flex;
 }
 .left-block{
     z-index: 1;
@@ -575,7 +587,7 @@ position: relative;
     justify-content: space-between;
 }
 .choose_su_cards__line_one{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .choose_su_cards__card{
     width: 20%;
@@ -592,7 +604,8 @@ position: relative;
     cursor: pointer;
 }
 .choose_su_cards__card{
-    height: 117px;
+    width: 165px;
+    height: 125px;
     padding: 3px;
 }
 .choose_su_cards__card .text{
@@ -603,6 +616,7 @@ position: relative;
 }
 .choose_su_cards__card .text .bot{
     font-size: 11px;
+    line-height: 14px;
 }
 /*.choose_su_cards__card:nth-child(4n + 4){
     margin-right: 0;
@@ -689,9 +703,9 @@ position: relative;
     display: none;
     align-items: center;
     flex-direction: column;
-    margin-top: 22px;
+    margin-top: 0;
     width: 340px;
-    padding: 15px;
+    padding: 0 15px 15px 15px;
     box-sizing: content-box;
     height: 515px;
     max-height: 515px;
@@ -717,6 +731,9 @@ position: relative;
     cursor: pointer;
     transition: all linear .2s;
 }
+/*.rubric-main__right-wrapper .rubric-main__right-programs .program:nth-child(1){
+    margin-top: 15px;
+}*/
 .rubric-main__right-wrapper .rubric-main__right-programs .program:before{
     position: absolute;
     right: 10px;
@@ -799,6 +816,14 @@ position: relative;
     width: 50%;
     margin-left: 1%;
 }
+.left-coll p{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+}
 .bahelor-magister{
     display: flex;
     flex-direction: row;
@@ -871,30 +896,82 @@ position: relative;
     cursor: pointer;
 }
 .right-coll img{
+    position: relative;
     width: 67px;
     height: 67px;
     margin: 0;
     padding: 0;
     border: none;
+    z-index: 2;
 }
 .pulse_wrapper{
     position: relative;
+    margin: 0 auto 0;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+
 }
 .pulse_wrapper .pulse_bg{
-    width: 150%;
-    height: 150%;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border-radius: 50%;
+    z-index: 1;
     background: linear-gradient(rgba(1, 68, 199, 0.29), rgba(1, 68, 199, 0.7), rgba(0, 28, 84, 0.7));
+    display: block;
+    font-size: 1.3em;
+    font-weight: light;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100px;
+    letter-spacing: -1px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(1, 68, 199, 0.7);
+    -webkit-animation: pulse 1.2s infinite;
+}
+.pulse_wrapper .pulse:hover +.pulse_bg{
+    -webkit-animation: none;
+}
+@-webkit-keyframes pulse {
+    0% {
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+    100% {
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        box-shadow: 0 0 0 30px rgba(1, 68, 199, 0.0);
+    }
+    /*100% {*/
+    /*    -moz-transform: scale(0.9);*/
+    /*    -ms-transform: scale(0.9);*/
+    /*    -webkit-transform: scale(0.9);*/
+    /*    transform: scale(0.9);*/
+    /*    box-shadow: 0 0 0 0 rgba(1, 68, 199, 0.0);*/
+    /*}*/
 }
 
 
 .right-coll a p{
+    position: relative;
+    text-shadow: 1px 1px 3px whitesmoke;
+    z-index: 2;
     font-family: Roboto;
     font-size: 12px;
     font-weight: 700;
     line-height: 14px;
     letter-spacing: 0em;
     text-align: left;
-    margin-left: -20px;
+    margin-left: -10px;
 
 }
 #showMore{
@@ -2098,367 +2175,10 @@ margin-top: -.7vh;
     margin-right: -1%;
     font-weight: 600;
 }
-/* todo: Hron                                              .. :: School of University :: ..            */
-.school_of_university{
-    width: 100%;
-}
-.school_of_university h2{
-    width: 100%;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 46px;
-    font-weight: 700;
-}
-
-@media (max-height: 700px){
-    #online{
-        background: #E00000;
-        color: #fff;
-        margin-top: 1.8vh;
-        margin-bottom: 1vh;
-    }
-    .left-side h4{
-        margin-top: 2vh;
-        margin-bottom: 5vh;
-    }
-    .col-right img{
-        width: 100%;
-        margin-left: 0;
-        display: block;
-    }
-    .toggle-tabs-active{
-        position: absolute;
-        top: 0;
-        border-bottom: 2px solid #E00000!important;
-    }
-    .footer{
-        bottom: 1%;
-    }
-    .top-slider-control{
-
-        bottom: 10%;
-    }
-    .obertka{
-        height: 64vh;
-    }
-}
-@media (max-width:450px ){
-    .left-side{
-        display: none;
-    }
-    .right-side{
-        /*display: none;*/
-    }
-    header{
-        display: none;
-    }
-
-}
-/*******************LITEBOX********************/
-.position-relative{
-    position: relative;
-}
-.litebox{
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    top:0;
-    z-index: 999;
-    position: fixed;
-    background: #000000CC;
-}
-.litebox-none{
-    display: none!important;
-}
-.litebox-item{
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-.litebox-item-visible{
-    display: block;
-}
-.litebox iframe{
-    display: block;
-    margin: 5vh auto 0;
-}
-.litebox-item img{
-    width: 60%;
-    display: block;
-    opacity: 1!important;
-    margin: 5vh auto 0;
-}
-#lite-left-arr{
-    width: 10%;
-    position: absolute;
-    left: 5%;
-    top: 35%;
-    cursor: pointer;
-}
-#lite-right-arr{
-    width: 10%;
-    position: absolute;
-    right: 5%;
-    top: 35%;
-    cursor: pointer;
-}
-#close-btt{
-    position: absolute;
-    right: 12%;
-    top: 5%;
-    width: 5%;
-    cursor: pointer;
-}
-/*****************************SECOND PAGE***********************************/
-.about-header{
-    min-height: 410px;
-    width:100%;
-    background-image: url("../img/about-he.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-.top-slider-form-about input{
-    margin-top: 2vh!important;
-
-}
-.top-slider-form-about{
-    top: 16vh!important;
-}
-.top-slider-form-about button{
-    margin-top: 2vh;
-}
-.top-slider-form-about{
-    padding-bottom: 2vh;
-}
-.our-university{
-    font-size: 2.7em;
-    color:#fff;
-    text-transform: uppercase;
-    font-weight: 800;
-    text-shadow:  0px 4px 5px rgba(0, 0, 0, 0.55);
-    width: 60%;
-    padding: 15% 0 0 6.2%;
-    line-height: 1.35em;
-    letter-spacing: .04em;
-}
-.breadcr{
-    text-align: left;
-    color: #fff;
-    font-weight: 400;
-    padding:0 0 0 6.2%;
-    font-size: .9em;
-}
-.breadcr a{
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: 400;
-    font-size: .9em;
-}
-.about-text-block{
-    padding: 0 2vw;
-}
-.about-welcome{
-    padding-top: 5vh;
-    text-align: left;
-    font-weight: 600!important;
-    font-size: 2em;
-    text-indent: .5em;
-}
-.about-under-title{
-    font-weight: 600;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    text-indent: 1em;
-    margin-top: -2.5vh;
-}
-.about-text-block img{
-    margin-left: 1.1vw;
-}
-.about-text-block-p{
-    font-weight: 400;
-    text-align: justify;
-    text-indent: 1em;
-    margin-bottom: 0;
-    line-height: 1.2em;
-}
-
 /*todo: ......................................................... ......:::::: Media ::::::......     */
 /*Start_School_of_University*/
 @media only screen and (min-width: 1071px){
     .rubric-main__left-bot-clone{
-        display: none;
-    }
-}
-@media only screen and (max-width: 1070px){
-    .rubric-head h2{
-        font-size: 24px;
-    }
-    .rubric-head img{
-        display: block;
-        margin: 0 auto;
-        width: 80%;
-    }
-
-
-
-
-
-
-    .rubric-main__left{
-        width: 100%;
-    }
-    .rubric-main__left-top{
-        justify-content: center;
-    }
-    .top_title_card{
-        font-size: 23px;
-        line-height: 27px;}
-    .mid_title_card{
-        font-size: 16px;
-        line-height: 22px;
-    }
-    .bot_title_card{
-        font-size: 14px;
-        margin-top: 12px;
-        width: 190px;
-        line-height: 16px;
-    }
-    .left-block .footer_title_card{
-        margin-top: 16px;
-    }
-    .left-block .footer_title_card a{
-        font-size: 14px;
-        line-height: 16px;
-    }
-    .right-block img{
-        width: 132px;
-    }
-    .choose_su_cards{
-        width: 96%;
-    }
-    .choose_su_cards__line_one{
-        margin-bottom: 10px;
-    }
-    .choose_su_cards__card{
-        width: 25%;
-        min-width: 74px;
-        max-width: 120px;
-
-        border-radius: .25rem;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-align: center;
-        box-shadow: 1px 1px 15px lightgray;
-        /*background: linear-gradient(149.94deg, #fffffd 18.76%, #faf8ff 75.67%);*/
-        background: linear-gradient(149.94deg, #fffffd 18.76%, #faf8ff 75.67%);
-        cursor: pointer;
-    }
-    .choose_su_cards__card{
-        position: relative;
-        height: 30px;
-        width: 74px;
-        padding: 3px 3px 3px 20px;
-    }
-    .choose_su_cards__card .text{
-        margin-top: 3px;
-    }
-    .choose_su_cards__card .text .top{
-        font-size: 8px;
-        line-height: 9px;
-    }
-    .choose_su_cards__card .text .bot{
-        font-size: 4px;
-        line-height: 5px;
-    }
-    /*.choose_su_cards__card:nth-child(4n + 4){
-        margin-right: 0;
-    }*/
-    .choose_su_cards__card .img{
-        position: absolute;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 0;
-        height: 100%;
-        left: 5px;
-        top: 0;
-    }
-    .choose_su_cards__card .img img{
-        position: relative;
-        height: 17px;
-    }
-    .rubric-main__right{
-        display: flex;
-        justify-content: right;
-        flex-grow: 1;
-        min-width: 320px;
-    }
-    .rubric-main__right-wrapper{
-        margin-top: 36px;
-        width: 320px;
-        box-sizing: content-box;
-        position: relative;
-    }
-    .rubric-main__right-wrapper .rubric-main__right-nav{
-        width: 320px;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
-    }
-    .rubric-main__right-wrapper .text{
-        font-size: 18px;
-    }
-    .rubric-main__right-wrapper .rubric-main__right-nav .nav img.nav-down{
-        transform: rotate(180deg);
-        margin: 0 0 0 10px;
-    }
-    .rubric-main__right-programs{
-        align-items: center;
-        flex-direction: column;
-        margin-top: 0;
-        min-width: 320px;
-        width: 340px;
-        padding: 0 15px 15px 15px;
-        height: 258px;
-        max-height: 258px;
-    }
-    .rubric-main__right-wrapper .rubric-main__right-programs .program{
-        min-width: 320px;
-        width: 340px;
-        font-size: 14px;
-        line-height: 16px;
-     }
-
-
-
-
-
-    .rubric-main{
-        display: flex;
-        justify-content: center;
-    }
-    .rubric-main__wrapper{
-        justify-content: center;
-        padding: 0 15px;
-    }
-    .rubric-main__right{
-        justify-content: center;
-    }
-    .rubric-main__left-bot{
-        display: none;
-    }
-    .rubric-main__left-bot-clone{
-        display: flex;
-        justify-content: center;
-    }
-    /*todo: ........................................ ......:::::: Removed Book ::::::......     */
-    .mob-university.school_of_university__mobile{
-        display: none;
-    }
-    .right-coll{
         display: none;
     }
 }
